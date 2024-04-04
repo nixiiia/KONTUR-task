@@ -8,7 +8,11 @@ $(function () {
   });
 });
 
-const openModalBtn = document.getElementById('open-modal-btn');
+const openModalBtn1 = document.getElementById('open-modal-btn1');
+
+const openModalBtn2 = document.getElementById('open-modal-btn2');
+
+const openModalBtn3 = document.getElementById('open-modal-btn3');
 
 const modal = document.getElementById('modal-window');
 
@@ -16,7 +20,15 @@ const modalInner = document.querySelector('.modal__inner');
 
 const modalBox = (modal, modalInner);
 
-openModalBtn.addEventListener('click', function () {
+openModalBtn1.addEventListener('click', function () {
+  modal.classList.add('open');
+});
+
+openModalBtn2.addEventListener('click', function () {
+  modal.classList.add('open');
+});
+
+openModalBtn3.addEventListener('click', function () {
   modal.classList.add('open');
 });
 
